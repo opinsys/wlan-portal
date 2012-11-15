@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %title Opinsys Labs
+    :css
+      h1 { color: #ED7113; }
+      .welcome { text-align: center; }
+      a:link {text-decoration: none}
+      a:visited {text-decoration: none}
+      a:active {text-decoration: none}
+      button {
+        font-size: 120%;
+        padding: 10px;
+        background-color: #b0c730;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b0c730), color-stop(1, #b0c730));
+        background-image: -webkit-linear-gradient(top, #b0c730 0%, #b0c730 100%);
+        background-image: -moz-linear-gradient(top, #b0c730 0%, #b0c730 100%);
+        background-image: -o-linear-gradient(top, #b0c730 0%, #b0c730 100%);
+        background-image: -ms-linear-gradient(top, #b0c730 0%, #b0c730 100%);
+        background-image: linear-gradient(top, #b0c730 0%, #b0c730 100%);
+        border: 1px solid rgba(214,214,214,0.85);
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        text-shadow: 1px 1px 1px #ddd;
+        text-transform: uppercase; }
+      @media screen and (max-device-width:1024px) and (orientation: landscape) {
+
+      }
+      @media screen and (max-width:768px) {
+
+      }	
+  %body
+    =yield
+
+
+
+
+
