@@ -9,6 +9,11 @@ require 'haml'
 CONFIG = YAML.load_file( File.join( File.dirname(__FILE__), "config.yml" ) )
 
 set :port, 80
+
+get '/' do
+  puts "Redirect to #{CONFIG['redirect_url']}"
+  redirect CONFIG['redirect_url']
+end
  
 get '/accept' do
   puts "Accpet #{request.ip}"
